@@ -1,4 +1,4 @@
-problema 10 from itertools import product
+from itertools import product
 from typing import List, Tuple, Optional
 
 

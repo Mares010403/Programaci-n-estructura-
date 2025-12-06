@@ -5,23 +5,23 @@ import collections
 sys.setrecursionlimit(4000)
 
 class NodoSplit:
-    
+   
     def __init__(self, id_nodo, salidas):
         self.id = id_nodo
-        
+      
         self.salidas = salidas 
 
 class NodoMerge:
     
     def __init__(self, id_nodo, entradas):
         self.id = id_nodo
-       
+        
         self.entradas = entradas 
 
 class SplitstreamNetwork:
     
-        def __init__(self, m_global):
-        self.nodes = {} 
+    def __init__(self, m_global):
+        self.nodes = {}  
         self.m_global = m_global
         
         self.origen_map = {} 
@@ -37,7 +37,7 @@ class SplitstreamNetwork:
         if k <= 0:
             return None
         
-        
+       
         if id_nodo == 0:
             return k
 
@@ -49,7 +49,7 @@ class SplitstreamNetwork:
         resultado = None
 
         if nodo is None:
-            
+          
             return k
 
         
@@ -61,32 +61,31 @@ class SplitstreamNetwork:
                 k_origen = (k + 1) // 2
                 nodo_origen_id = nodo.entradas[0] 
             else:
-               
+                
                 k_origen = k // 2
                 nodo_origen_id = nodo.entradas[1] 
 
             
             resultado = self.calcular_origen_global(nodo_origen_id, k_origen)
 
-        
+       
         elif isinstance(nodo, NodoSplit):
-            # Simplificación: Si el Split es el nodo final consultado, 'k' es la posición
-            # ya indexada por ese Split. Asumimos que la consulta es sobre la entrada.
+            
             resultado = k 
 
 
-       
+        
         self.origen_map[(id_nodo, k)] = resultado
         return resultado
 
 
 def resolver_splitstream():
-    """Función principal para leer la entrada y ejecutar las consultas."""
+    
     
     print("--- PROCESAMIENTO DE SECUENCIAS - SPLITSTREAM ---")
     
     try:
-       
+        
         m = int(input("Longitud de la secuencia global (m): "))
         n = int(input("Número de nodos (n): "))
         q = int(input("Número de consultas (q): "))
@@ -121,7 +120,7 @@ def resolver_splitstream():
             else:
                 print(f"Tipo de nodo desconocido: {tipo}. Ignorando.")
 
-        
+       
         print("\nConsultas (salida, índice):")
         resultados = []
         for i in range(q):
@@ -142,7 +141,7 @@ def resolver_splitstream():
                 resultados.append(f"({id_salida_final}, {k}) -> {valor}")
                 
             except Exception as e:
-               
+                
                 resultados.append(f"Consulta {i+1} falló: Error de formato o nodo inválido. ({e})")
 
         
