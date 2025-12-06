@@ -1,0 +1,25 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+29
+'ingresa precio del producto'
+5
+1
+6
+precio
+6
+1
+3
+iva
+11
+precio*0.16
+4
+1
+39
+'el iva del precio del producto es',iva
+1

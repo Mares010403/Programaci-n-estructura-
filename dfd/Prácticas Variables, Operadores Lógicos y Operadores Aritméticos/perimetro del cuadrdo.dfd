@@ -1,0 +1,25 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+68
+'ingresa el valor de un lado para sacar el perimetro de un cuadrado'
+5
+1
+5
+valor
+6
+1
+9
+perimetro
+7
+4*valor
+4
+1
+40
+'el perimetro del cuadrado es',perimetro
+1

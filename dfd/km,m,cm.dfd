@@ -1,0 +1,33 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+71
+'ingresa los kilometros que desees convertir a metros y a centrimetros'
+5
+1
+10
+kilometros
+6
+2
+6
+metros
+15
+kilometros*1000
+11
+centimetros
+17
+kilometros*100000
+4
+1
+32
+'kilometros a metros son',metros
+4
+1
+33
+'mostrar centimetros',centimetros
+1

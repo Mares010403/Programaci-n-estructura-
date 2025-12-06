@@ -1,0 +1,33 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+36
+'ingresa el balor de 3 resistencias'
+5
+1
+12
+resistencia1
+5
+1
+12
+resistencia2
+5
+1
+12
+resistencia3
+6
+1
+5
+total
+44
+(resistencia1)+(resistencia2)+(resistencia3)
+4
+1
+45
+'el valor total de las resistencias es',total
+1

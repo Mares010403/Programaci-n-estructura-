@@ -1,0 +1,29 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+28
+'ingresa el valor del radio'
+5
+1
+5
+radio
+6
+2
+2
+pi
+6
+3.1416
+5
+area1
+10
+pi*radio^2
+4
+1
+55
+'el valor del area cuando el radio es',radio,'es',area1
+1

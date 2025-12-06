@@ -1,0 +1,33 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+16
+'ingresa nota 1'
+5
+1
+5
+nota1
+4
+1
+16
+'ingresa nota 2'
+5
+1
+5
+nota2
+6
+1
+8
+promedio
+15
+(nota1+nota2)/2
+4
+1
+39
+'el promedio de las notas es', promedio
+1
